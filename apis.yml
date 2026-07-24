@@ -1,7 +1,24 @@
 aid: chaart
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chaart.png
 name: Chaart
-description: Chaart is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Chaart (주식회사 차트, Chaart Inc.) is a Seoul-based art-trading and art-asset-management
+  platform for South Korea''s art collectors and investors. Its iOS and Android apps let collectors
+  buy and resell artworks in the secondary market with transparent price/valuation information,
+  automatic artwork matching, authenticity checks, secure delivery, and integrated payments. Chaart
+  reports 5,000+ registered collectors and thousands of artworks traded, and raised pre-seed funding
+  from 500 Global. Chaart is a consumer mobile app: as of this enrichment pass it publishes no public
+  developer API, OpenAPI, SDKs, or developer portal.'
 url: https://raw.githubusercontent.com/api-evangelist/chaart/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Art
+- Marketplace
+- Collectibles
+- Fintech
+- Mobile App
+- South Korea
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/chaart-domain-security.yml
 - type: Website
   url: https://chaart.co
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
